@@ -1,0 +1,120 @@
+$primary-color: #2f80ed;
+$secondary-color: #333333;
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    color: $secondary-color;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.social-links .logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+}
+
+h1 {
+    color: $primary-color;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    color: $secondary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: $primary-color;
+}
+
+a {
+    color: $primary-color;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.menu {
+    background-color: $primary-color;
+    padding: 1em 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: 1em;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill-name {
+    min-width: 80px;
+    margin-right: 1em;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #ddd;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: $primary-color;
+}
+
+@media (max-width: 575px) {
+    .experience {
+        display: block;
+    }
+
+    .menu {
+        ul {
+            flex-direction: column;
+
+            li {
+                margin-right: 0;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+}

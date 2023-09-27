@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Загальні стилі */
+body {
+  background-image: linear-gradient(to bottom, #f0f0f0, #ccc);
+}
+
+.cv {
+  background-image: linear-gradient(to right, #f0f0f0, #ffcccc);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовків */
+h1 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стилі для посилань */
+a {
+  text-decoration: none;
+}
+
+/* Стилі для фото профілю */
+img {
+  border-radius: 50%;
+}
+
+/* Стилі для навігаційного меню */
+.menu {
+  background-color: #2f80ed;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Стилі для секцій */
+section {
+  margin-bottom: 30px;
+}
+
+/* Стилі для навичок */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #2f80ed;
+  border-radius: 5px;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 575px) {
+  .cv {
+    padding: 10px;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
